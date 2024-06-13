@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import styled from 'styled-components';
+import About from "./About";
 import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Bg>
+        <About />
+        
+        <div className="area">
+            <ul className="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+      </Bg>
+    </>
   );
 }
 
 export default App;
+
+const Bg = styled.div`
+  height: auto;
+  width: 100%;
+  background-color:#11071F;
+  color:white;
+`;

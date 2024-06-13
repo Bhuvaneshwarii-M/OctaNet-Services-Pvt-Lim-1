@@ -1,0 +1,52 @@
+.header ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 3%;
+    gap:5%;
+}
+.AboutMe{
+    margin: 4%;
+    padding-left: 6%;
+}
+.AboutMe h1,p{
+    height:auto;
+    width: 50%;
+}
+.Contacts{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin: 5%;
+    padding-left: 6%;
+   color:white;
+
+}
+.Contacts .lnlink h4{
+    color: white;
+    text-decoration: none;
+}
+.Contacts .github h4{
+    color: white;
+    text-decoration: none;
+} 
+
+.AboutMe {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+
+  
